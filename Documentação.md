@@ -53,7 +53,7 @@ ETAPA 1
 
 > O systemctl funciona como um gerenciador.
 
-  -- Passo 2.1: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
+  - Passo 2.1: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
   
 ETAPA 2
 
