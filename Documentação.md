@@ -154,7 +154,7 @@ ETAPA 2
 
 ```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
 
-1. Foi utilizado "10.9.13" já que a rede é 10.9.14.0.
+1. Foi utilizado "10.9.13" já que a rede é 10.9.13.0.
 
 - Passo 4: Edite os arquivos para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com os comandos:
 
