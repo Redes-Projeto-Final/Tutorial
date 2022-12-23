@@ -51,11 +51,15 @@ ETAPA 1
 > O sudo permite que o usuário comum tenha privilégios de acesso.
 > O apt-get permite a instalação e atualização de pacotes.
 
+![juliaredes1oficial](https://user-images.githubusercontent.com/103438145/209324853-a5f8c26b-9116-490f-87dd-616f7e5cd610.png)
+
 - Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
 
 ```sudo systemctl status bind9```
 
 > O systemctl funciona como um gerenciador.
+
+![juliaredes2](https://user-images.githubusercontent.com/103438145/209326903-2813a04c-30f6-46b2-ae66-c4575485a570.png)
 
   - Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
   
