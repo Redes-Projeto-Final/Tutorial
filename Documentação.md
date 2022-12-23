@@ -75,7 +75,7 @@ ETAPA 2
 
 - Passo 3 (Para a zona reversa): Criar arquivo db, cópia do /etc/bind/db.127.
 
-````sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
+```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
 
 1. Foi utilizado "10.9.13" já que a rede é 10.9.14.0.
 
