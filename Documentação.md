@@ -71,6 +71,8 @@ ETAPA 2
 
 > O mkdir é o comando que cria diretórios ou subdiretórios.
 
+![juliaredes3](https://user-images.githubusercontent.com/103438145/209330495-b49c7ae0-4be7-4078-8a93-715ae57d92b6.png)
+
 - Passo 2 (Para a zona direta): Criar arquivo, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando abaixo.
 
 ```sudo cp /etc/bind/db.empty /etc/bind/zones/db.dominio```
