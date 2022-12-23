@@ -113,7 +113,7 @@ Ex.: ```ssh administrador@10.9.13.103```
 
 - CONTINUA...
 
-
+&nbsp;
 
 ### Servidores de Nomes
 
@@ -128,11 +128,15 @@ ETAPA 1
 > O sudo permite que o usuário comum tenha privilégios de acesso.
 > O apt-get permite a instalação e atualização de pacotes.
 
+![juliaredes1](https://user-images.githubusercontent.com/103438145/209394647-13ffbcc8-c72b-4fd8-a94a-74d75a841a15.png)
+
 - Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
 
 ```sudo systemctl status bind9```
 
 > O systemctl funciona como um gerenciador.
+
+![juliaredes2 (1)](https://user-images.githubusercontent.com/103438145/209394841-2e9df730-12ec-4f26-9a54-4445b33786f7.png)
 
   - Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
   
@@ -144,6 +148,8 @@ ETAPA 2
 
 > O mkdir é o comando que cria diretórios ou subdiretórios.
 
+![Captura de tela 2022-12-23 160510](https://user-images.githubusercontent.com/103438145/209395339-bd56fc0b-a306-491e-a76a-ef1873197aba.png)
+
 - Passo 2 (Para a zona direta): Criar arquivo, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando abaixo.
 
 ```sudo cp /etc/bind/db.empty /etc/bind/zones/db.dominio```
@@ -154,13 +160,17 @@ ETAPA 2
 
 ```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
 
-1. Foi utilizado "10.9.13" já que a rede é 10.9.13.0.
+![Captura de tela 2022-12-23 160644](https://user-images.githubusercontent.com/103438145/209395467-9b284760-b083-4717-9731-1098111212d8.png)
 
 - Passo 4: Edite os arquivos para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com os comandos:
 
 ```sudo nano db.dominio ```
 
 > Nano é um editor de texto.
+
+![JULIAREDES6 (1)](https://user-images.githubusercontent.com/103438145/209395674-2e803946-ba2e-417f-a8b9-a9596f5d073a.png)
+![juliaredes7 (1)](https://user-images.githubusercontent.com/103438145/209395913-74c57839-e042-4594-9602-7a1b7c4d5755.png)
+
 
 ETAPA 3
 
@@ -170,14 +180,22 @@ Passo 2: Para checagem da sintaxe dos arquivos use o comando ```sudo named-check
 
 > O named-checkzone é utilizado para verificar os arquivos da zona DNS.
 
-O mesmo deve ser feito pra o arquivo da zona reversa
+![Captura de tela 2022-12-23 161511](https://user-images.githubusercontent.com/103438145/209396272-c204be48-eb29-4fb4-9998-45749d50bebd.png)
+
+O mesmo deve ser feito pra o arquivo da zona reversa.
+
+![juliaredes13 (1)](https://user-images.githubusercontent.com/103438145/209396431-fd38c228-2121-47ef-bebc-8c6620025114.png)
 
 Passo 3: Use o comando ```sudo nano /etc/default/named``` a fim de configurar para resolver endereços IPv4, adicionando no arquivo a linha ```OPTIONS="-4 -u bind```.
+
+![julçiaredes16](https://user-images.githubusercontent.com/103438145/209396630-34e97fef-7873-488c-9e8e-709b53b1878f.png)
 
 Passo 4: Habilite o bind9 e reinicie com os comandos:
 
 ```sudo systemctl enable bind9```
 ```sudo systemctl restart bind9```
+
+![juliaredes17](https://user-images.githubusercontent.com/103438145/209396788-077ce470-85ab-4871-9747-dd9bef6b68f9.png)
 
 ETAPA 4
 
@@ -188,11 +206,21 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 > Abaixo de nameserves e addresses adicione os endereços das máquinas.
 > Em search, adicione o nome do domínio que a máquina participa.
 
+![juliaredes18](https://user-images.githubusercontent.com/103438145/209396885-2da1cd70-1f8f-46fa-b778-339e9a46fd73.png)
+![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
+
 &nbsp;
 
 ### Implementação do Servidor Web LAMP
 
 &nbsp;
 
-## Resultados
+## Testes e Resultados
+
+![juliaredes22](https://user-images.githubusercontent.com/103438145/209397188-5b9b3e06-647d-487f-be34-fddc2ff4db6e.png)
+![juliaredes23](https://user-images.githubusercontent.com/103438145/209397396-37145c05-11be-439b-a8eb-b6528887624a.png)
+![juliaredes24](https://user-images.githubusercontent.com/103438145/209397702-8a2abebc-8c5d-4b93-9693-9af14c8a812f.png)
+
+
+
 
