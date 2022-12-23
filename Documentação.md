@@ -38,6 +38,83 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 
 &nbsp; 
 
+### Etapa inicial
+
+- Passo 1: Primeiramente é feito o login no usuário ```redes``` usando os seguintes comandos:
+
+```su redes```
+
+```cd ~```
+
+- Passo 2: Realizado o login, deve-se iniciar a conexão com a VPN com o comando:
+
+```openvpn3 session-start --config vpn913.labredes```
+
+A conexão depende do usuário e senha que devem ser previamente configurados na máquina virtual.
+
+- Passo 3: Agora acesse a sua VM remotamente, pelo terminal do computador, usando o SSH:
+
+```ssh administrador@<insira aqui o endereço IP da sua VM>```
+
+Ex.: ```ssh administrador@10.9.13.103```
+
+- Passo 4: Use o comando ```hostname``` para verificação do nome do host.
+
+- Passo 5: Use o comando ```hostname -I``` para verificação do IP e da máscara de rede.
+
+- Passo 6: Com ```$ resolvectl status ens160``` verificamos o status do DNS.
+
+### Instalação e configuração
+
+- Passo 1: Deve-se verificar e definir o IP da rede interna para o Samba. Fazemos isso com o comando:
+
+```$ sudo nano /etc/netplan/00-installer-config.yaml```
+
+Caso seja preciso realizar alguma alteração, é necessário salvar o arquivo e aplicar a configuração. Para isso, use o comando:
+
+```$ sudo netplan apply```
+
+- Passo 2: Use o comando ```$ ifconfig -a``` para verificar informações da configuração das interfaces de rede.
+
+- Passo 3: Faça o ping para a máquina virtusl usando ```$ ping 10.9.24.1```. Se tudo estiver funcionando, prossiga com a conexão entre a máquina e o terminal via SSH.
+
+Para a conexão, use: ```ssh administrador@<insira aqui o endereço IP da sua VM>```
+
+Ex.: ```ssh administrador@10.9.13.103```
+
+- Passo 4: Agora realize a instalação do SAMBA, para isso use os comandos:
+
+```$ sudo apt update```
+
+```$ sudo apt install samba```
+
+- Passo 5: Depois de instalado, verifique o status de funcionamento do SAMBA usando o comando: 
+
+```$ whereis samba```
+
+- Passo 6: Os comandos abaixo deverão ser utilizados para a realização do backup do arquivo e a criação de um novo contendo os comandos necessários.
+
+```$ sudo cp /etc/samba/smb.conf{,.backup}```
+
+```$ ls -la```
+
+```-rw-r--r--  1 root root 8942 Mar 22 20:55 smb.conf```
+
+```-rw-r--r--  1 root root 8942 Mar 23 01:42 smb.conf.backup```
+
+```$```
+
+```$ sudo bash -c 'grep -v -E "^#|^;" /etc/samba/smb.conf.backup | grep . > /etc/samba/smb.conf'```
+
+
+- Passo 7: Use ```$ sudo nano /etc/samba/smb.conf``` para verificar o arquivo de configuração. 
+
+
+
+- CONTINUA...
+
+
+
 ### Servidores de Nomes
 
 &nbsp;
@@ -51,15 +128,11 @@ ETAPA 1
 > O sudo permite que o usuário comum tenha privilégios de acesso.
 > O apt-get permite a instalação e atualização de pacotes.
 
-![juliaredes1oficial](https://user-images.githubusercontent.com/103438145/209324853-a5f8c26b-9116-490f-87dd-616f7e5cd610.png)
-
 - Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
 
 ```sudo systemctl status bind9```
 
 > O systemctl funciona como um gerenciador.
-
-![juliaredes2](https://user-images.githubusercontent.com/103438145/209326903-2813a04c-30f6-46b2-ae66-c4575485a570.png)
 
   - Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
   
@@ -70,8 +143,6 @@ ETAPA 2
 ```sudo mkdir /etc/bind/zones```
 
 > O mkdir é o comando que cria diretórios ou subdiretórios.
-
-![juliaredes3](https://user-images.githubusercontent.com/103438145/209330495-b49c7ae0-4be7-4078-8a93-715ae57d92b6.png)
 
 - Passo 2 (Para a zona direta): Criar arquivo, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando abaixo.
 
