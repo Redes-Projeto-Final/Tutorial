@@ -132,7 +132,7 @@ ETAPA 1
 
 ```sudo systemctl status bind9```
 
-- Precisa estar como "active".
+1. O 'active' precisa estar como 'active (running)'.
 
 > O systemctl funciona como um gerenciador.
 
