@@ -132,6 +132,8 @@ ETAPA 1
 
 ```sudo systemctl status bind9```
 
+- Precisa estar como "active".
+
 > O systemctl funciona como um gerenciador.
 
 ![juliaredes2 (1)](https://user-images.githubusercontent.com/103438145/209394841-2e9df730-12ec-4f26-9a54-4445b33786f7.png)
@@ -140,7 +142,7 @@ ETAPA 1
   
 ETAPA 2
 
-- Passo 1: Crie o diretório que será responsável por armazenar os arquivos de zona que deverá ser encontrado no diretório /etc/bind/zones com o comando:
+- Passo 1: Como os arquivos do bind precisam estar no diretório "/etc/bind", deve-se criar um diretório "/zones" que será responsável por armazenar os arquivos de zona no diretório /etc/bind/zones com o comando:
 
 ```sudo mkdir /etc/bind/zones```
 
@@ -148,7 +150,7 @@ ETAPA 2
 
 ![Captura de tela 2022-12-23 160510](https://user-images.githubusercontent.com/103438145/209395339-bd56fc0b-a306-491e-a76a-ef1873197aba.png)
 
-- Passo 2 (Para a zona direta): Criar arquivo, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando abaixo.
+- Passo 2 (Para a zona direta): Criar arquivo db, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando abaixo.
 
 ```sudo cp /etc/bind/db.empty /etc/bind/zones/db.dominio```
 
@@ -160,7 +162,7 @@ ETAPA 2
 
 ![Captura de tela 2022-12-23 160644](https://user-images.githubusercontent.com/103438145/209395467-9b284760-b083-4717-9731-1098111212d8.png)
 
-- Passo 4: Edite os arquivos para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com os comandos:
+- Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com os comandos:
 
 ```sudo nano db.dominio ```
 
@@ -199,7 +201,7 @@ ETAPA 4
 
 Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), incrementando os endereços IPs dessas máquinas nas interfaces de rede local, utilize o comando ```ls /etc/netplan``` para descobrir o nome do seu arquivo de configuração e logo em seguida:
 
-```sudo nano /etc/netplan/nome_arquivo.yaml```
+```sudo nano /etc/netplan/nome_arquivo_configuração```
 
 > Abaixo de nameserves e addresses adicione os endereços das máquinas.
 > Em search, adicione o nome do domínio que a máquina participa.
@@ -213,14 +215,16 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 
 &nbsp;
 
-## Testes e Resultados
+## Testes e Resultados 
+
+- Primeiramente, para testar o serviço DNS deve-se verificar que os campos DNS servers e DNS Domain estão certos com o comando ```systemd-resolve --status ens160```. 
 
 ![juliaredes22](https://user-images.githubusercontent.com/103438145/209397188-5b9b3e06-647d-487f-be34-fddc2ff4db6e.png)
->
+> Teste do serviço DNS para a máquina ns1 com dig.
 ![juliaredes23](https://user-images.githubusercontent.com/103438145/209397396-37145c05-11be-439b-a8eb-b6528887624a.png)
->
+> Teste do serviço DNS reverso para a máquina ns1 com dig .
 ![juliaredes24](https://user-images.githubusercontent.com/103438145/209397702-8a2abebc-8c5d-4b93-9693-9af14c8a812f.png)
->
+> Teste do serviço DNS reverso para a máquina ns2 com dig.
 
 
 
