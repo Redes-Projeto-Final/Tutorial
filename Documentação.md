@@ -117,8 +117,6 @@ Ex.: ```ssh administrador@10.9.13.103```
 
 ### Servidores de Nomes
 
-&nbsp;
-
 ETAPA 1
 
 - Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:
@@ -218,8 +216,11 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 ## Testes e Resultados
 
 ![juliaredes22](https://user-images.githubusercontent.com/103438145/209397188-5b9b3e06-647d-487f-be34-fddc2ff4db6e.png)
+>
 ![juliaredes23](https://user-images.githubusercontent.com/103438145/209397396-37145c05-11be-439b-a8eb-b6528887624a.png)
+>
 ![juliaredes24](https://user-images.githubusercontent.com/103438145/209397702-8a2abebc-8c5d-4b93-9693-9af14c8a812f.png)
+>
 
 
 
