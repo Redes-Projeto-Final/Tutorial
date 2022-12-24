@@ -217,14 +217,24 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 
 ## Testes e Resultados 
 
-- Primeiramente, para testar o serviço DNS deve-se verificar que os campos DNS servers e DNS Domain estão certos com o comando ```systemd-resolve --status ens160```. 
+Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos DNS servers e DNS Domain estão certos com o comando ```systemd-resolve --status ens160```. 
+
+&nbsp;
 
 ![juliaredes22](https://user-images.githubusercontent.com/103438145/209397188-5b9b3e06-647d-487f-be34-fddc2ff4db6e.png)
 - Teste do serviço DNS para a máquina ns1 com dig.
+
+&nbsp;
+
 ![juliaredes23](https://user-images.githubusercontent.com/103438145/209397396-37145c05-11be-439b-a8eb-b6528887624a.png)
 - Teste do serviço DNS reverso para a máquina ns1 com dig .
+
+&nbsp;
+
 ![juliaredes24](https://user-images.githubusercontent.com/103438145/209397702-8a2abebc-8c5d-4b93-9693-9af14c8a812f.png)
 - Teste do serviço DNS reverso para a máquina ns2 com dig.
+
+&nbsp;
 
 
 
