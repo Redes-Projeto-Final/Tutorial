@@ -42,9 +42,11 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 
 - Passo 1: Primeiramente é feito o login no usuário ```redes``` usando os seguintes comandos:
 
-```su redes```
+```
+su rede
 
-```cd ~```
+cd ~
+```
 
 - Passo 2: Realizado o login, deve-se iniciar a conexão com a VPN com o comando:
 
