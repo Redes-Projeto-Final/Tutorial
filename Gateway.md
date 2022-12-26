@@ -51,4 +51,13 @@
       ens160: WAN
    ```
  ### Passo 5:
- Após visualizar a nomenclatura das interfaces, 
+ Após visualizar a nomenclatura das interfaces, é necessário editar no arquivo ```/etc/netplan/50-cloud-init.yaml``` as configurações de cada interface (gateway, ip estático, etc). Seguindo esse modelo:
+ 
+  #### 5.1 - Acessando o arquivo a ser editado:
+  ``` sudo nano /etc/netplan/50-cloud-init.yaml```
+  #### 5.2 - Modelo a ser seguido:
+  ```-----------------```
+  #### 5.3 - Aplicar as alterações realizadas:
+  ``` sudo netplan apply ```
+
+ ### Passo 5:
