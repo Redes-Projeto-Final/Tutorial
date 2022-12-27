@@ -51,13 +51,40 @@
       ens160: WAN
    ```
  ### Passo 5:
- Após visualizar a nomenclatura das interfaces, é necessário editar no arquivo ```/etc/netplan/50-cloud-init.yaml``` as configurações de cada interface (gateway, ip estático, etc). Seguindo esse modelo:
+ Após visualizar a nomenclatura das interfaces, é necessário editar no arquivo ```/etc/netplan/00-installer-config.yaml``` as configurações de cada interface (gateway, ip estático, etc). Seguindo esse modelo:
  
   #### 5.1 - Acessando o arquivo a ser editado:
-  ``` sudo nano /etc/netplan/50-cloud-init.yaml```
+  ``` sudo nano /etc/netplan/00-installer-config.yaml```
   #### 5.2 - Modelo a ser seguido:
-  ```-----------------```
+  ```                     
+   network:
+       renderer: networkd
+       ethernets:
+           ens160:
+               addresses: [10.9.13.102/24]  #IP da sua máquina na WAN
+               dhcp4: false
+               gateway4: 10.9.13.1          #Gateway da WAN
+               nameservers:
+                   addresses:
+                     - 10.9.13.117                           #IP do máquina configurada para NS1 na WAN
+                     - 10.9.13.124                           #IP do máquina configurada para NS2 na WAN
+                   search: [grupo5.turma913.ifalara.local]   #Domínio 
+
+           ens192:
+               addresses: [192.168.13.73/28] #IP da sua máquina na LAN
+               dhcp4: false
+           #    gateway4: 192.168.13.1       #Gateway da LAN deve estar comentado
+               nameservers:
+                   addresses:
+                     - 192.168.13.75                        #IP do máquina configurada para NS2 na LAN
+                     - 192.168.13.76                        #IP do máquina configurada para NS2 na LAN
+                   search: [grupo5.turma913.ifalara.local]  #Domínio
+       version: 2
+```
   #### 5.3 - Aplicar as alterações realizadas:
   ``` sudo netplan apply ```
-
- ### Passo 5:
+  #### 5.4 - Verificar as alterações realizadas:
+  ``` ifconfig -a ```
+  
+ ### Passo 6:
+ 
