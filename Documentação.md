@@ -48,6 +48,16 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 
 ### Usuários da VMs
 
+- antony;
+- beatriz;
+- eduarda;
+- julia;
+
+Com o comando ```sudo cat/etc/passwd```, os usuários podem ser visualizados.
+
+![Captura de tela 2022-12-28 143519](https://user-images.githubusercontent.com/103438145/209850850-f6378101-8f20-4ae4-a364-309007d523e3.png)
+
+
 &nbsp;
 
 ## Configurações
