@@ -125,68 +125,68 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 &nbsp;
 
 ![juredes8](https://user-images.githubusercontent.com/103438145/209854428-55209750-3ae1-4835-86b8-d116b5ef68ce.png)
-- Ping para a máquina smb.grupo5.turma913.ifalara.local
+- Ping para a máquina smb.
 
 
 &nbsp;
 
 ![juredes9](https://user-images.githubusercontent.com/103438145/209854429-250a2f8d-41bb-49e1-bbc3-205b1a4bbc1a.png)
-- Nslookup para a máquina ns2.grupo5.turma913.ifalara.local
+- Nslookup para a máquina ns2.=
 
 &nbsp;
 
 ![juredes3](https://user-images.githubusercontent.com/103438145/209854431-eff16dce-d025-47a7-ad0a-b52e43c05f6e.png)
-- Ping para a máquina ns2.grupo5.turma913.ifalara.local
+- Ping para a máquina ns2.
 
 &nbsp;
 
 ![juredes4](https://user-images.githubusercontent.com/103438145/209854433-90f35f5b-e2d9-40bf-ab89-28915d3d3286.png)
-- Ping para a máquina ns2.grupo5.turma913.ifalara.local
+- Ping para a máquina ns2.
 
 &nbsp;
 
 ![juredes6](https://user-images.githubusercontent.com/103438145/209854436-ff4153c2-066d-4839-97fa-8f3c736a6f3e.png)
-- Ping para a máquina gw.grupo5.turma913.ifalara.local
+- Ping para a máquina gw.
 
 &nbsp;
 
 ![juredes7](https://user-images.githubusercontent.com/103438145/209854438-63fe4725-dccf-469c-bf25-4ca83c2b6262.png)
-- Ping para a máquina gw.grupo5.turma913.ifalara.local
+- Ping para a máquina gw.
 
 &nbsp;
 
 ![juredes11](https://user-images.githubusercontent.com/103438145/209854439-82b8627a-4bb2-4a2f-8e6b-7a9ff358e69e.png)
-- Nslookup para a máquina gw.grupo5.turma913.ifalara.local
+- Nslookup para a máquina gw.
 
 &nbsp;
 
 ![juredes12](https://user-images.githubusercontent.com/103438145/209854441-1dffb9c1-934b-4c6d-963d-73226d597de4.png)
-- Nslookup para a máquina smb.grupo5.turma913.ifalara.local
+- Nslookup para a máquina smb.
 
 &nbsp;
 
 
-- Dig para a máquina ns2.grupo5.turma913.ifalara.local
+- Dig para a máquina ns2.
 
 &nbsp;
 
 
-- Dig para a máquina gw.grupo5.turma913.ifalara.local
+- Dig para a máquina gw.
 
 &nbsp;
 
 
-- Dig para a máquina smb.grupo5.turma913.ifalara.local
+- Dig para a máquina smb.
 
 &nbsp;
 
 ![juredes16](https://user-images.githubusercontent.com/103438145/209854452-18a128ed-ce26-408e-963c-01018cb2cfe8.png)
-- Dig -x para a máquina gw.grupo5.turma913.ifalara.local
+- Dig -x para a máquina gw.
 
 &nbsp;
 
 ![juredes17](https://user-images.githubusercontent.com/103438145/209854455-6f2079d2-4d59-40b6-bdd7-f18cc449acd7.png)
-- Dig -x para a máquina smb.grupo5.turma913.ifalara.local
+- Dig -x para a máquina smb.
 
 &nbsp;
 
