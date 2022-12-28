@@ -182,17 +182,17 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 &nbsp;
 
 ![juredes15](https://user-images.githubusercontent.com/103438145/209854450-de285651-b7b3-47ae-9ceb-bdaff22a582f.png)
-- Dig -x para a máquina gw.grupo5.turma913.ifalara.local
+- 
 
 &nbsp;
 
 ![juredes16](https://user-images.githubusercontent.com/103438145/209854452-18a128ed-ce26-408e-963c-01018cb2cfe8.png)
-- Dig -x para a máquina smb.grupo5.turma913.ifalara.local
+- Dig -x para a máquina gw.grupo5.turma913.ifalara.local
 
 &nbsp;
 
 ![juredes17](https://user-images.githubusercontent.com/103438145/209854455-6f2079d2-4d59-40b6-bdd7-f18cc449acd7.png)
--
+- Dig -x para a máquina smb.grupo5.turma913.ifalara.local
 
 &nbsp;
 
