@@ -1,5 +1,7 @@
 
-### Servidores de Nomes
+# Implementação do DNS master
+
+&nbsp;
 
 ETAPA 1
 
@@ -23,6 +25,9 @@ ETAPA 1
 ![juliaredes2 (1)](https://user-images.githubusercontent.com/103438145/209394841-2e9df730-12ec-4f26-9a54-4445b33786f7.png)
 
   - Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
+
+
+&nbsp;
   
 ETAPA 2
 
@@ -55,6 +60,7 @@ ETAPA 2
 ![JULIAREDES6 (1)](https://user-images.githubusercontent.com/103438145/209395674-2e803946-ba2e-417f-a8b9-a9596f5d073a.png)
 ![juliaredes7 (1)](https://user-images.githubusercontent.com/103438145/209395913-74c57839-e042-4594-9602-7a1b7c4d5755.png)
 
+&nbsp;
 
 ETAPA 3
 
@@ -81,6 +87,8 @@ Passo 4: Habilite o bind9 e reinicie com os comandos:
 
 ![juliaredes17](https://user-images.githubusercontent.com/103438145/209396788-077ce470-85ab-4871-9747-dd9bef6b68f9.png)
 
+&nbsp;
+
 ETAPA 4
 
 Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), incrementando os endereços IPs dessas máquinas nas interfaces de rede local, utilize o comando ```ls /etc/netplan``` para descobrir o nome do seu arquivo de configuração e logo em seguida:
@@ -92,10 +100,6 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 
 ![Captura de tela 2022-12-24 113504](https://user-images.githubusercontent.com/103438145/209440363-c7ec3ba1-2568-445a-9cc8-242a2384860b.png)
 ![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
-
-&nbsp;
-
-### Implementação do Servidor Web LAMP
 
 &nbsp;
 
