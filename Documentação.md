@@ -20,6 +20,8 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 
 ### Tabela com as definições
 
+&nbsp;
+
 <pre>
 ------------------------------------------------------------------
 | IP da Subrede:    |   10.9.13.0/24   |   192.168.13.64/28      |
