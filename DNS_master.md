@@ -160,7 +160,12 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 &nbsp;
 
+![juredes12](https://user-images.githubusercontent.com/103438145/209854441-1dffb9c1-934b-4c6d-963d-73226d597de4.png)
 - Nslookup para a máquina smb.grupo5.turma913.ifalara.local
+
+&nbsp;
+
+
 - Dig para a máquina ns2.grupo5.turma913.ifalara.local
 
 &nbsp;
@@ -172,11 +177,6 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 
 - Dig para a máquina smb.grupo5.turma913.ifalara.local
-
-&nbsp;
-
-![juredes15](https://user-images.githubusercontent.com/103438145/209854450-de285651-b7b3-47ae-9ceb-bdaff22a582f.png)
-- 
 
 &nbsp;
 
