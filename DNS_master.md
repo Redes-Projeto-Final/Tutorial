@@ -125,16 +125,18 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 &nbsp;
 
 ![juredes18](https://user-images.githubusercontent.com/103438145/209854408-53dfb5ea-581a-4fd9-a978-3791c9047d05.png)
-- Ping para a máquina smb.grupo5.turma913.ifalara.local
+- 
 
 &nbsp;
 
 ![juredes8](https://user-images.githubusercontent.com/103438145/209854428-55209750-3ae1-4835-86b8-d116b5ef68ce.png)
-- Nslookup para a máquina ns2.grupo5.turma913.ifalara.local
+- Ping para a máquina smb.grupo5.turma913.ifalara.local
+
 
 &nbsp;
 
 ![juredes9](https://user-images.githubusercontent.com/103438145/209854429-250a2f8d-41bb-49e1-bbc3-205b1a4bbc1a.png)
+- Nslookup para a máquina ns2.grupo5.turma913.ifalara.local
 - Ping para a máquina ns2.grupo5.turma913.ifalara.local
 
 &nbsp;
@@ -145,7 +147,7 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 &nbsp;
 
 ![juredes4](https://user-images.githubusercontent.com/103438145/209854433-90f35f5b-e2d9-40bf-ab89-28915d3d3286.png)
-- Ping para a máquina gw.grupo5.turma913.ifalara.local
+- Ping para a máquina ns2.grupo5.turma913.ifalara.local
 
 &nbsp;
 
@@ -155,16 +157,16 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 &nbsp;
 
 ![juredes7](https://user-images.githubusercontent.com/103438145/209854438-63fe4725-dccf-469c-bf25-4ca83c2b6262.png)
-- Nslookup para a máquina gw.grupo5.turma913.ifalara.local
+- Ping para a máquina gw.grupo5.turma913.ifalara.local
 
 &nbsp;
 
 ![juredes11](https://user-images.githubusercontent.com/103438145/209854439-82b8627a-4bb2-4a2f-8e6b-7a9ff358e69e.png)
-- Nslookup para a máquina smb.grupo5.turma913.ifalara.local
+- Nslookup para a máquina gw.grupo5.turma913.ifalara.local
 
 &nbsp;
 
-
+- Nslookup para a máquina smb.grupo5.turma913.ifalara.local
 - Dig para a máquina ns2.grupo5.turma913.ifalara.local
 
 &nbsp;
