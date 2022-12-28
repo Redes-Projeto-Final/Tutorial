@@ -98,7 +98,7 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 > Abaixo de nameserves e addresses adicione os endereços das máquinas.
 > Em search, adicione o nome do domínio que a máquina participa.
 
-![Captura de tela 2022-12-24 113504](https://user-images.githubusercontent.com/103438145/209440363-c7ec3ba1-2568-445a-9cc8-242a2384860b.png)
+![juredes1](https://user-images.githubusercontent.com/103438145/209853734-8a390946-d33e-4d20-84bc-20a5dcf58b40.png)
 ![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
 
 &nbsp;
