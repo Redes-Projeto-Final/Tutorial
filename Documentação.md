@@ -25,7 +25,7 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 | IP da Subrede:    |   10.9.13.0/24   |   192.168.13.64/28      |
 | IP de Broadcast:  |  10.9.13.255/24  |   192.168.13.79/28      |
 ------------------------------------------------------------------
-<pre>
+</pre>
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Grupo 5 - Júlia Ferreira, Antony Gabriel, Beatriz Santos e Maria Eduarda Lima
 |    WEB    |    10.9.13.219    |   192.168.13.77   | www.grupo5.turma913.local.ifalara.local |
 |    BD     |    10.9.13.220    |   192.168.13.78   | bd.grupo5.turma913.local.ifalara.local  |
 -----------------------------------------------------------------------------------------------
-<pre>
+</pre>
 
 &nbsp;
 
