@@ -159,3 +159,40 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 &nbsp;
 
+![digx5](https://user-images.githubusercontent.com/103438145/209996341-fa716598-c675-4b92-9da0-9be4f5771b68.png)
+- Pesquisa reversa de DNS do ns1 usando dig.
+
+&nbsp;
+
+![judigx1](https://user-images.githubusercontent.com/103438145/209996387-874d4e8e-8de6-4a2a-961b-83f52631e69f.png)
+- Pesquisa reversa de DNS do ns2 usando dig.
+
+&nbsp;
+
+![judigx2](https://user-images.githubusercontent.com/103438145/209996389-193733d9-ca1b-4fe8-860b-560f1a2dd06d.png)
+- Pesquisa reversa de DNS do gw usando dig.
+
+&nbsp;
+
+![judigx3](https://user-images.githubusercontent.com/103438145/209996390-5d143164-3dc1-40b2-b268-7060bebc8d40.png)
+- Pesquisa reversa de DNS do smb usando dig.
+
+&nbsp;
+
+![dig2](https://user-images.githubusercontent.com/103438145/209996381-f9fad5db-c5b9-4c2e-9bb5-4c1cda665f15.png)
+- Pesquisa de DNS do ns1 usando dig.
+
+&nbsp;
+
+![judig1](https://user-images.githubusercontent.com/103438145/209996382-ac6d8d0c-a046-4d73-90a7-ad51b70a3806.png)
+- Pesquisa de DNS do gw usando dig.
+
+&nbsp;
+
+![judig4](https://user-images.githubusercontent.com/103438145/209996383-b6df4941-7cf7-4f57-b1aa-ceabd7fdf122.png)
+- Pesquisa de DNS do smb usando dig.
+
+&nbsp;
+
+![judig7](https://user-images.githubusercontent.com/103438145/209996385-34325128-99f1-4b75-82b9-6794387ed55a.png)
+- Pesquisa de DNS do ns2 usando dig.
