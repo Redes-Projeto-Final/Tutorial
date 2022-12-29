@@ -7,6 +7,8 @@
 
 - Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:
 
+&nbsp;
+
 ```sudo apt-get install bind9 dnsutils bind9-doc```
 
 ![juredes2](https://user-images.githubusercontent.com/103438145/209967946-ead1a71f-b062-481b-9033-e07ce3e0b04a.png)
@@ -16,6 +18,8 @@
 &nbsp;
 
 - Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
+
+&nbsp;
 
 ```sudo systemctl status bind9```
 
@@ -30,9 +34,11 @@
 
 &nbsp;
   
-ETAPA 2
+**ETAPA 2**
 
 - Passo 1: Como os arquivos do bind precisam estar no diretório "/etc/bind", deve-se criar um diretório "/zones" que será responsável por armazenar os arquivos de zona no diretório /etc/bind/zones com o comando:
+
+&nbsp;
 
 ```sudo mkdir /etc/bind/zones```
 
@@ -43,6 +49,8 @@ ETAPA 2
 
 - Passo 2 (Para a zona direta): Criar arquivo db, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando como no comando abaixo.  
 
+&nbsp;
+
 ```sudo cp /etc/bind/db.empty /etc/bind/zones/db.grupo5.turma913.ifalara.local```
 
 > Arquivos db armazenam os nomes das máquinas, funcionando como bancos de dados.
@@ -51,6 +59,8 @@ ETAPA 2
 
 - Passo 3 (Para a zona reversa): Criar arquivo db, cópia do /etc/bind/db.127.
 
+&nbsp;
+
 ```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
 
 ![Captura de tela 2022-12-23 160644](https://user-images.githubusercontent.com/103438145/209395467-9b284760-b083-4717-9731-1098111212d8.png)
@@ -58,6 +68,8 @@ ETAPA 2
 &nbsp;
 
 - Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com os comandos:
+
+&nbsp;
 
 ```sudo nano db.dominio ```
 
@@ -71,7 +83,7 @@ ETAPA 2
 
 &nbsp;
 
-ETAPA 3
+**ETAPA 3**
 
 Passo 1: Utilize o comando ```sudo named-checkconf``` para checar os arquivos.
 
@@ -103,9 +115,11 @@ Passo 4: Habilite o bind9 e reinicie com os comandos:
 
 &nbsp;
 
-ETAPA 4
+**ETAPA 4**
 
 Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), incrementando os endereços IPs dessas máquinas nas interfaces de rede local, utilize o comando ```ls /etc/netplan``` para descobrir o nome do seu arquivo de configuração e logo em seguida:
+
+&nbsp;
 
 ```sudo nano /etc/netplan/nome_arquivo_configuração```
 
