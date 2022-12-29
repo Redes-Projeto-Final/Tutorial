@@ -139,7 +139,7 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 &nbsp;
 
-![juredes3](https://user-images.githubusercontent.com/103438145/209854431-eff16dce-d025-47a7-ad0a-b52e43c05f6e.png)
+![Captura de tela 2022-12-29 160450](https://user-images.githubusercontent.com/103438145/209997708-a1b5e4be-8bd7-4851-80c8-ff1191d7b97e.png)
 - Ping para a máquina ns2.
 
 &nbsp;
