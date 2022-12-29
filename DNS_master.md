@@ -64,13 +64,12 @@
 
 &nbsp;
 
-- Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com o comando como no exemplo abaixo:
+- Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com o comando como no exemplo abaixo:  
+
 ```sudo nano db.dominio ```
+> Nano é um editor de texto.
 
 &nbsp;
-
-
-> Nano é um editor de texto.
 
 ![juredes6](https://user-images.githubusercontent.com/103438145/209967958-b6b4e9d6-3195-415c-b7b9-62a9de38fb47.png)
 
@@ -82,14 +81,14 @@
 
 **ETAPA 3**
 
-Passo 1: Utilize o comando ```sudo named-checkconf``` para checar os arquivos.
-
-&nbsp;
+Passo 1: Utilize o comando ```sudo named-checkconf``` para checar os arquivos.  
 
 Passo 2: Para checagem da sintaxe dos arquivos use o comando ```sudo named-checkzone nome_dominio nome_arquivo_db```
 
 ![Captura de tela 2022-12-23 161511](https://user-images.githubusercontent.com/103438145/209396272-c204be48-eb29-4fb4-9998-45749d50bebd.png)
 > O named-checkzone é utilizado para verificar os arquivos da zona DNS.
+
+&nbsp;
 
 O mesmo deve ser feito pra o arquivo da zona reversa.
 
