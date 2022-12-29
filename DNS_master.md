@@ -67,7 +67,7 @@ Passo 3 (Para a zona reversa): Criar arquivo db, cópia do /etc/bind/db.127.
 
 Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com o comando como no exemplo abaixo:  
 
-```sudo nano db.dominio ```
+```sudo nano db.grupo5.turma913.ifalara.local ```
 > Nano é um editor de texto.
 
 &nbsp;
