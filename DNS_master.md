@@ -98,7 +98,6 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 > Abaixo de nameserves e addresses adicione os endereços das máquinas.
 > Em search, adicione o nome do domínio que a máquina participa.
 
-![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
 ![juredes1](https://user-images.githubusercontent.com/103438145/209853734-8a390946-d33e-4d20-84bc-20a5dcf58b40.png)
 
 &nbsp;
@@ -106,6 +105,8 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 ## Testes e Resultados 
 
 Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos DNS servers e DNS Domain estão certos com o comando ```systemd-resolve --status ens160```. 
+
+![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
 
 &nbsp;
 
