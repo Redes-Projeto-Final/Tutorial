@@ -78,7 +78,6 @@ O mesmo deve ser feito pra o arquivo da zona reversa.
 
 Passo 3: Use o comando ```sudo nano /etc/default/named``` a fim de configurar para resolver endereços IPv4, adicionando no arquivo a linha ```OPTIONS="-4 -u bind```.
 
-![julçiaredes16](https://user-images.githubusercontent.com/103438145/209396630-34e97fef-7873-488c-9e8e-709b53b1878f.png)
 ![juredes10](https://user-images.githubusercontent.com/103438145/209967975-997c3f41-2189-4f43-bb0e-6b7c05065508.png)
 
 Passo 4: Habilite o bind9 e reinicie com os comandos:
@@ -100,6 +99,7 @@ Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), in
 > Em search, adicione o nome do domínio que a máquina participa.
 
 ![Captura de tela 2022-12-23 162531](https://user-images.githubusercontent.com/103438145/209397123-df746f16-faeb-4cec-8e52-5fd23dfb4c17.png)
+![juredes1](https://user-images.githubusercontent.com/103438145/209853734-8a390946-d33e-4d20-84bc-20a5dcf58b40.png)
 
 &nbsp;
 
