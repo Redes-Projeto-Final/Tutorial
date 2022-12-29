@@ -11,7 +11,7 @@
   
 ## ETAPA 2 - Configuração na interface de rede
   
- * Passo 1: Editar o arquivo Netplan para permitir o acesso a internet por meio do DNS Master
+ * Passo 1: Editar o arquivo ```/etc/netplan/00-instaler-config.yaml``` para permitir o acesso a internet por meio do DNS Master
   
    ```$ sudo nano /etc/netplan/00-instaler-config.yaml```
    
@@ -31,3 +31,18 @@
 
 ```$ sudo systemctl status bind9```
 
+## ETAPA 4 - Configuração de zonas
+
+* Passo 1: Editar o arquivo ```/etc/bind/named.conf.local```: 
+
+```$ sudo nano /etc/bind/named.conf.local```
+
+## ETAPA 5 - Checagem da sintaxe
+
+```$ sudo named-checkconf```
+
+> Se não houver retorno após esse comando, significa que está tudo certo.
+
+## ETAPA 6 - Teste com o Dig
+
+```$ dig @10.9.13.117 ns1.grupo5.turma913.ifalara.local````
