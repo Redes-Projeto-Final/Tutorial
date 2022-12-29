@@ -5,7 +5,8 @@
 
 **ETAPA 1**
 
-Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:
+Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:  
+
 ```sudo apt-get install bind9 dnsutils bind9-doc```
 
 &nbsp;
