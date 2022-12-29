@@ -13,6 +13,7 @@ ETAPA 1
 > O apt-get permite a instalação e atualização de pacotes.
 
 ![juliaredes1](https://user-images.githubusercontent.com/103438145/209394647-13ffbcc8-c72b-4fd8-a94a-74d75a841a15.png)
+![juredes2](https://user-images.githubusercontent.com/103438145/209967946-ead1a71f-b062-481b-9033-e07ce3e0b04a.png)
 
 - Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
 
@@ -58,7 +59,9 @@ ETAPA 2
 > Nano é um editor de texto.
 
 ![JULIAREDES6 (1)](https://user-images.githubusercontent.com/103438145/209395674-2e803946-ba2e-417f-a8b9-a9596f5d073a.png)
+![juredes6](https://user-images.githubusercontent.com/103438145/209967958-b6b4e9d6-3195-415c-b7b9-62a9de38fb47.png)
 ![juliaredes7 (1)](https://user-images.githubusercontent.com/103438145/209395913-74c57839-e042-4594-9602-7a1b7c4d5755.png)
+![juredes7](https://user-images.githubusercontent.com/103438145/209967966-c4c54ae4-03b2-4c04-b497-2b995825f4ed.png)
 
 &nbsp;
 
@@ -79,6 +82,7 @@ O mesmo deve ser feito pra o arquivo da zona reversa.
 Passo 3: Use o comando ```sudo nano /etc/default/named``` a fim de configurar para resolver endereços IPv4, adicionando no arquivo a linha ```OPTIONS="-4 -u bind```.
 
 ![julçiaredes16](https://user-images.githubusercontent.com/103438145/209396630-34e97fef-7873-488c-9e8e-709b53b1878f.png)
+![juredes10](https://user-images.githubusercontent.com/103438145/209967975-997c3f41-2189-4f43-bb0e-6b7c05065508.png)
 
 Passo 4: Habilite o bind9 e reinicie com os comandos:
 
