@@ -134,29 +134,8 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 &nbsp;
 
-![juliaredes22](https://user-images.githubusercontent.com/103438145/209397188-5b9b3e06-647d-487f-be34-fddc2ff4db6e.png)  x
-- Teste do serviço DNS para a máquina ns1 com dig.
-
-&nbsp;
-
-![juliaredes23](https://user-images.githubusercontent.com/103438145/209397396-37145c05-11be-439b-a8eb-b6528887624a.png)    x
-- Teste do serviço DNS reverso para a máquina ns1 com dig .
-
-&nbsp;
-
-![juliaredes24](https://user-images.githubusercontent.com/103438145/209397702-8a2abebc-8c5d-4b93-9693-9af14c8a812f.png)     x
-- Teste do serviço DNS reverso para a máquina ns2 com dig.
-
-&nbsp;
-
 ![juredes8](https://user-images.githubusercontent.com/103438145/209854428-55209750-3ae1-4835-86b8-d116b5ef68ce.png)
 - Ping para a máquina smb.
-
-
-&nbsp;
-
-![juredes9](https://user-images.githubusercontent.com/103438145/209854429-250a2f8d-41bb-49e1-bbc3-205b1a4bbc1a.png)     x
-- Nslookup para a máquina ns2.
 
 &nbsp;
 
@@ -177,41 +156,6 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 ![juredes7](https://user-images.githubusercontent.com/103438145/209854438-63fe4725-dccf-469c-bf25-4ca83c2b6262.png)
 - Ping para a máquina gw.
-
-&nbsp;
-
-![juredes11](https://user-images.githubusercontent.com/103438145/209854439-82b8627a-4bb2-4a2f-8e6b-7a9ff358e69e.png)    x
-- Nslookup para a máquina gw.
-
-&nbsp;
-
-![juredes12](https://user-images.githubusercontent.com/103438145/209854441-1dffb9c1-934b-4c6d-963d-73226d597de4.png)      x
-- Nslookup para a máquina smb.
-
-&nbsp;
-
-
-- Dig para a máquina ns2.
-
-&nbsp;
-
-
-- Dig para a máquina gw.
-
-&nbsp;
-
-
-- Dig para a máquina smb.
-
-&nbsp;
-
-![juredes16](https://user-images.githubusercontent.com/103438145/209854452-18a128ed-ce26-408e-963c-01018cb2cfe8.png)  x
-- Dig -x para a máquina gw.
-
-&nbsp;
-
-![juredes17](https://user-images.githubusercontent.com/103438145/209854455-6f2079d2-4d59-40b6-bdd7-f18cc449acd7.png)    x
-- Dig -x para a máquina smb.
 
 &nbsp;
 
