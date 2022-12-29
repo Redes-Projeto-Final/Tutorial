@@ -5,7 +5,7 @@
 
 **ETAPA 1**
 
-- Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:
+Passo 1: Primeiramente, deve-se fazer a instalação da aplicação do DNS, bind9, com o comando:
 ```sudo apt-get install bind9 dnsutils bind9-doc```
 
 &nbsp;
@@ -16,7 +16,7 @@
 
 &nbsp;
 
-- Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
+Passo 2: É necessário que haja a verificação do status do serviço, com o seguinte comando:
 ```sudo systemctl status bind9```
 
 &nbsp;
@@ -29,13 +29,13 @@
 
 &nbsp;
 
-  - Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
+ Passo 3: Caso o serviço não esteja funcionando, utilize o comando ```sudo systemctl enable bind9```
 
 &nbsp;
   
 **ETAPA 2**
 
-- Passo 1: Como os arquivos do bind precisam estar no diretório "/etc/bind", deve-se criar um diretório "/zones" que será responsável por armazenar os arquivos de zona no diretório /etc/bind/zones com o comando:
+Passo 1: Como os arquivos do bind precisam estar no diretório "/etc/bind", deve-se criar um diretório "/zones" que será responsável por armazenar os arquivos de zona no diretório /etc/bind/zones com o comando:
 ```sudo mkdir /etc/bind/zones```
 
 &nbsp;
@@ -45,7 +45,8 @@
 
 &nbsp;
 
-- Passo 2 (Para a zona direta): Criar arquivo db, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utlize o comando como no comando abaixo.  
+Passo 2 (Para a zona direta): Criar arquivo db, cópia do /etc/bind/db.empty, que conterá os nomes das máquinas dentro do seu domínio. Utilize o comando como abaixo.  
+
 ```sudo cp /etc/bind/db.empty /etc/bind/zones/db.grupo5.turma913.ifalara.local```
 
 &nbsp;
@@ -55,16 +56,15 @@
 
 &nbsp;
 
-- Passo 3 (Para a zona reversa): Criar arquivo db, cópia do /etc/bind/db.127.
-```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
+Passo 3 (Para a zona reversa): Criar arquivo db, cópia do /etc/bind/db.127.  
 
-&nbsp;
+```sudo cp /etc/bind/db.127 /etc/bind/zones/db.10.9.13.rev```
 
 ![Captura de tela 2022-12-23 160644](https://user-images.githubusercontent.com/103438145/209395467-9b284760-b083-4717-9731-1098111212d8.png)
 
 &nbsp;
 
-- Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com o comando como no exemplo abaixo:  
+Passo 4: Edite os arquivos, tanto da zona direta quanto da reversa, para que se possa incrementar as informações do domínio (lembrar de entrar no diretório que os arquivos se encontram), com o comando como no exemplo abaixo:  
 
 ```sudo nano db.dominio ```
 > Nano é um editor de texto.
@@ -113,7 +113,8 @@ Passo 4: Habilite o bind9 e reinicie com os comandos:
 
 **ETAPA 4**
 
-Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), incrementando os endereços IPs dessas máquinas nas interfaces de rede local, utilize o comando ```ls /etc/netplan``` para descobrir o nome do seu arquivo de configuração e logo em seguida:
+Passo 1: Como é necessário configurar o dns nas máquinas (master e slave), incrementando os endereços IPs dessas máquinas nas interfaces de rede local, utilize o comando ```ls /etc/netplan``` para descobrir o nome do seu arquivo de configuração e logo em seguida:  
+
 ```sudo nano /etc/netplan/nome_arquivo_configuração```
 
 &nbsp;
