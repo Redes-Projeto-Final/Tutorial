@@ -45,4 +45,4 @@
 
 ## ETAPA 6 - Teste com o Dig
 
-```$ dig @10.9.13.117 ns1.grupo5.turma913.ifalara.local````
+```$ dig @10.9.13.117 ns1.grupo5.turma913.ifalara.local```
