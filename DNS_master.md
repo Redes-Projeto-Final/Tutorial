@@ -74,7 +74,6 @@ Passo 2: Para checagem da sintaxe dos arquivos use o comando ```sudo named-check
 
 O mesmo deve ser feito pra o arquivo da zona reversa.
 
-![juliaredes13 (1)](https://user-images.githubusercontent.com/103438145/209396431-fd38c228-2121-47ef-bebc-8c6620025114.png)
 ![juredes1](https://user-images.githubusercontent.com/103438145/209967379-07714a93-f52b-4704-855d-d1814def3eea.png)
 
 Passo 3: Use o comando ```sudo nano /etc/default/named``` a fim de configurar para resolver endereços IPv4, adicionando no arquivo a linha ```OPTIONS="-4 -u bind```.
