@@ -11,7 +11,7 @@
   
 ## ETAPA 2 - Configuração na interface de rede
   
- * Passo 1: Editar o arquivo ```/etc/netplan/00-instaler-config.yaml``` para permitir o acesso a internet por meio do DNS Master
+ * Passo 1: Editar o arquivo ```/etc/netplan/00-installer-config.yaml``` para permitir o acesso a internet por meio do DNS Master
   
    ```$ sudo nano /etc/netplan/00-instaler-config.yaml```
    
