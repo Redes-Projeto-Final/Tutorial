@@ -27,7 +27,7 @@
 
 ```$ sudo apt-get install bind9 dnsutils bind9-doc -y```
 
-* Passo 2: Veriicar status
+* Passo 2: Verificar status
 
 ```$ sudo systemctl status bind9```
 
