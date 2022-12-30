@@ -67,29 +67,3 @@
 
 &nbsp;
 
-## ETAPA 6 - Testes
-
-* Teste com DIG
-
-```$ dig @10.9.13.117 ns1.grupo5.turma913.ifalara.local```
-
-![Captura de tela de 2022-12-27 11-41-14](https://user-images.githubusercontent.com/103398796/210071282-3a491fbd-6561-418b-bdfc-cd69462a1e1e.PNG)
-
-* Teste com nslookup
-
-![nslookup5](https://user-images.githubusercontent.com/103398796/210071899-8fc973d1-5b39-4653-8939-c3bf61cf1f18.png)
-
-> nslookup do GW
-
-![nslookup6](https://user-images.githubusercontent.com/103398796/210071902-7e87f817-c847-489d-9e69-70dcc33d4a51.png)
-
-> nslookup do SMB
-
-![nslookup8](https://user-images.githubusercontent.com/103398796/210071908-164f1c32-6a63-4774-803b-b0ecd7f42237.png)
-
-> nslookup do NS1
-
-![nslookup9](https://user-images.githubusercontent.com/103398796/210071928-2e35829d-0415-4a2c-9647-5ed8290216fe.png)
-
-> nslookup do NS2
-
