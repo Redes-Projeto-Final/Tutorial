@@ -26,7 +26,7 @@
    ``` sudo ufw status ```
    Estando realmente ativo, aparecerá no terminal as seguintes informações:
 
-   **Imagem do teste firewall**
+   ![firewall](https://user-images.githubusercontent.com/104701006/210070741-32550179-f427-4516-9efa-254d5adb92b6.png)
 
   ### Passo 4:
   Prosseguindo na configuração do ```Gateway```, deve ser habilitado o encaminhamneto dos pacotes vindos da ```WAN``` para a ```LAN``` e vice-versa. Essa opção é habilitada da seguinte forma: Acessar o arquivo ```/etc/ufw/sysctl.conf``` e remover o comentário ```(#)``` da linha que contém ```# net/ipv4/ip_forwarding=1```
@@ -44,7 +44,7 @@
     
   O resultado exibido na tela informará os nomes das interfaces estão sendo utilizadas. No caso abaixo, os nomes das interfaces utilizadas são ```ens160``` e ```ens192```, respectivamente ```WAN``` e ```LAN```.
   
-   **Print do ifconfig**
+  ![Ifconfig -a](https://user-images.githubusercontent.com/104701006/210070506-caab7e44-e7a9-4652-b37e-f1860e3421dd.png)
    
    ```bash
       ens192: LAN
@@ -148,7 +148,7 @@ Verificar se o ```Firewall``` está ativo e posteriormente reiniciar a máquina.
 ### Passo 9:
 Após configurar seu ```Gateway```, ele já pode ser adicionado nas interfaces dos demais serviços no arquivo  ``` sudo nano /etc/netplan/00-installer-config.yaml```
 
-  #### 9.1:
+  #### 9.1 (Os comentários podem ser removidos posteriormente):
 ```
 network:
        renderer: networkd
@@ -199,3 +199,60 @@ iptables -A FORWARD -p tcp -d 10.0.0.100 --dport 139 -j ACCEPT
 iptables -A PREROUTING -t nat -i enp0s3 -p udp --dport 53 -j DNAT --to 10.9.13.102:53
 iptables -A FORWARD -p udp -d 192.168.13.75 --dport 53 -j ACCEPT
 ```
+### Testes:
+
+![Captura de tela de 2022-12-30 09-44-26](https://user-images.githubusercontent.com/104701006/210071487-f8d23502-a782-4b54-98ab-be280600b446.png)
+- Ping para a máquina smb.
+
+&nbsp;
+![Captura de tela de 2022-12-30 09-47-20](https://user-images.githubusercontent.com/104701006/210071680-6ca15230-cf90-47c1-a668-98d8e0e85a34.png)
+- Ping para a máquina ns1.
+
+&nbsp;
+![Captura de tela de 2022-12-30 09-46-10](https://user-images.githubusercontent.com/104701006/210071571-7f6689ff-b414-4abc-8fd5-8c3854d22e54.png)
+- Ping para a máquina ns2.
+
+&nbsp;
+
+![digx5](https://user-images.githubusercontent.com/103438145/209996341-fa716598-c675-4b92-9da0-9be4f5771b68.png)
+- Pesquisa reversa de GW do smb usando dig.
+
+&nbsp;
+
+![judigx1](https://user-images.githubusercontent.com/103438145/209996387-874d4e8e-8de6-4a2a-961b-83f52631e69f.png)
+- Pesquisa reversa de GW do ns1 usando dig.
+
+&nbsp;
+
+![judigx2](https://user-images.githubusercontent.com/103438145/209996389-193733d9-ca1b-4fe8-860b-560f1a2dd06d.png)
+- Pesquisa reversa de DNS do ns2 usando dig.
+
+&nbsp;
+
+![dig2](https://user-images.githubusercontent.com/103438145/209996381-f9fad5db-c5b9-4c2e-9bb5-4c1cda665f15.png)
+- Pesquisa de GW do smb usando dig.
+
+&nbsp;
+
+![judig1](https://user-images.githubusercontent.com/103438145/209996382-ac6d8d0c-a046-4d73-90a7-ad51b70a3806.png)
+- Pesquisa de GW do ns1 usando dig.
+
+&nbsp;
+
+![judig4](https://user-images.githubusercontent.com/103438145/209996383-b6df4941-7cf7-4f57-b1aa-ceabd7fdf122.png)
+- Pesquisa de GW do ns2 usando dig.
+
+&nbsp;
+
+![3nslookupns1](https://user-images.githubusercontent.com/103438145/210069196-b873552a-d6b0-42d5-a3c5-4258033b85d2.png)
+- Nslookup do smb.
+
+&nbsp;
+
+![2nslookupns1](https://user-images.githubusercontent.com/103438145/210069201-1f14ccd3-103d-4599-ac8f-26ad9735092d.png)
+- Nslookup do ns1.
+
+&nbsp;
+
+![1nslookupns1](https://user-images.githubusercontent.com/103438145/210069204-eec9657f-5d70-4ccb-a4d0-dc6dc6af8b9e.png)
+- Nslookup do ns2.
