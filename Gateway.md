@@ -181,21 +181,23 @@ network:
   
  ### Passo 10:
  
- Nas máquinas SAMBA, NS1 e NS2 é necessário adicionar as informações de redirecionamento de portas a partir do IPTABLES, no arquivo ```/etc/rc.local```. Após as alterações no arquivo é necessário reiniciar a máquina.
+ Nas máquinas SGATEWAY é necessário adicionar as informações de redirecionamento de portas a partir do IPTABLES, no arquivo ```/etc/rc.local```. Após as alterações no arquivo é necessário reiniciar a máquina.
  
  #### SAMBA:
  ```
  #Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor interno na porta 445
-iptables -A PREROUTING -t nat -i enp0s3 -p tcp --dport 445 -j DNAT --to 10.9.13.102:445
-iptables -A FORWARD -p tcp -d 10.0.0.100 --dport 445 -j ACCEPT
+iptables -A PREROUTING -t nat -i ens160 -p tcp --dport 445 -j DNAT --to 10.9.13.103:445
+iptables -A FORWARD -p tcp -d 10.9.13.103 --dport 445 -j ACCEPT
 
 #Recebe pacotes na porta 139 da interface externa do gw e encaminha para o servidor interno na porta 139
-iptables -A PREROUTING -t nat -i enp0s3 -p tcp --dport 139 -j DNAT --to 10.9.13.102:139
-iptables -A FORWARD -p tcp -d 10.0.0.100 --dport 139 -j ACCEPT
+iptables -A PREROUTING -t nat -i ens160 -p tcp --dport 139 -j DNAT --to 10.9.13.103:139
+iptables -A FORWARD -p tcp -d 10.9.13.103 --dport 139 -j ACCEPT
+
 ```
 #### NS1 e NS2:
 ```
 #Recebe pacotes na porta 53 da interface externa do gw e encaminha para o servidor DNS Master interno na porta 53
-iptables -A PREROUTING -t nat -i enp0s3 -p udp --dport 53 -j DNAT --to 10.9.13.102:53
-iptables -A FORWARD -p udp -d 192.168.13.75 --dport 53 -j ACCEPT
+iptables -A PREROUTING -t nat -i ens160 -p udp --dport 53 -j DNAT --to 10.9.13.117:53
+iptables -A FORWARD -p udp -d 10.9.13.117 --dport 53 -j ACCEPT
+
 ```
