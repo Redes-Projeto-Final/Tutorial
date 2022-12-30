@@ -60,10 +60,6 @@ Com o comando ```sudo cat/etc/passwd``` os usuários podem ser visualizados.
 
 &nbsp;
 
-### Gateway Server
-
-&nbsp;
-
 ### SAMBA
 
 &nbsp; 
@@ -146,12 +142,3 @@ Ex.: ```ssh administrador@10.9.13.103```
 - CONTINUA...
 
 &nbsp;
-
-
-
-## Testes e Resultados 
-
-
-
-
-
