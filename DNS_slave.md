@@ -22,7 +22,8 @@
   
     ```$ sudo netplan apply```
 
-    ```$ ifconfig```
+    ```$ ifconfig```  
+    
     ![Captura de tela de 2022-12-27 11-33-02](https://user-images.githubusercontent.com/103398796/210071260-7b5ad40d-afc0-45bd-9387-de61fbace72e.PNG)
     
     &nbsp;
