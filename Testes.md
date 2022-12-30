@@ -121,3 +121,22 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 ![nslookup9](https://user-images.githubusercontent.com/103398796/210071928-2e35829d-0415-4a2c-9647-5ed8290216fe.png)
 
 > nslookup do NS2
+
+####Teste redirecionamento de portas
+
+![Captura de tela de 2022-12-30 10-47-59](https://user-images.githubusercontent.com/103438080/210077521-fd69cd73-55bd-48ad-aaaf-1881528b9ca2.png)
+- Conexão com a porta 445.
+
+![Captura de tela de 2022-12-30 10-44-22](https://user-images.githubusercontent.com/103438080/210077533-4290194e-29f5-41f6-857e-ec8587fd4ac2.png)
+- Conexão pelo explorador de arquivos.
+
+![Captura de tela de 2022-12-30 10-44-40](https://user-images.githubusercontent.com/103438080/210077531-37944e71-a8f8-4f02-8836-b6e116914ee3.png)
+- Pasta inicialmente vazia.
+
+![Captura de tela de 2022-12-30 10-46-00](https://user-images.githubusercontent.com/103438080/210077528-c9201f37-42f1-4a39-b0a1-1382381e1b70.png)
+- Criando arquivo .txt pelo terminal.
+
+![Captura de tela de 2022-12-30 10-46-33](https://user-images.githubusercontent.com/103438080/210077526-7536d878-c74c-4251-bfea-9ff5d85f5021.png)
+- Arquivo na pasta do explorador de arquivos.
+
+
