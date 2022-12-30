@@ -196,3 +196,19 @@ Obs: Primeiramente, para testar o serviço DNS deve-se verificar que os campos D
 
 ![judig7](https://user-images.githubusercontent.com/103438145/209996385-34325128-99f1-4b75-82b9-6794387ed55a.png)
 - Pesquisa de DNS do ns2 usando dig.
+
+&nbsp;
+
+![3nslookupns1](https://user-images.githubusercontent.com/103438145/210069196-b873552a-d6b0-42d5-a3c5-4258033b85d2.png)
+- Nslookup do gw.
+
+&nbsp;
+
+![2nslookupns1](https://user-images.githubusercontent.com/103438145/210069201-1f14ccd3-103d-4599-ac8f-26ad9735092d.png)
+- Nslookup do smb.
+
+&nbsp;
+
+![1nslookupns1](https://user-images.githubusercontent.com/103438145/210069204-eec9657f-5d70-4ccb-a4d0-dc6dc6af8b9e.png)
+- Nslookup do ns.
+
