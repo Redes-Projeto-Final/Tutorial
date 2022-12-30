@@ -1,4 +1,4 @@
-# Implementção do DNS Slave (NS2)
+# Implementação do DNS Slave (NS2)
 
 
 ## ETAPA 1 - Passos iniciais
